@@ -25,8 +25,8 @@ Meet good-quality coding standards (file structure, naming conventions, follows 
 Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
 Contributers:
-Sabrina Doerfler
-Richard Murillo
-Lori Haffelt
-Victor Mora 
+Sabrina Doerfler,
+Richard Murillo,
+Lori Haffelt,
+Victor Mora,
 James McConnaughey
