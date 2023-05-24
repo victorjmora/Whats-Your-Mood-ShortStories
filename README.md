@@ -1,4 +1,4 @@
-# Whats-Your-Mood-ShortStories
+# Whats-Your-Mood-Short-Stories
 
 Description:
 Enter your mood or something and get a random short story to read. Submit your own short story with genre tags, too. (Hope it doesn’t get sketchy - moderator? Option for users to flag things) Sort it by genre, rating, alphabet, submission date, etc. Could have a fun graphic front end (cluttered library with lots of items representing the genres all over stacks of books? Click on items - like a magic 8 ball or a teddy bear or a heart shaped jewel or whatever and the object magically interacts, serving up a random story title from the db).
