@@ -23,3 +23,10 @@ Be responsive.
 Be interactive (in other words, accept and respond to user input).
 Meet good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, and so on).
 Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
+
+Contributers:
+Sabrina Doerfler
+Richard Murillo
+Lori Haffelt
+Victor Mora 
+James McConnaughey
