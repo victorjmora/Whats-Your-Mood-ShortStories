@@ -26,21 +26,20 @@ User.init({
     type: DataTypes.STRING,
     allowNull: false,
   },
-  role: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
+  //role: {
+  //type: DataTypes.STRING,
+  //allowNull: false,
+  //},
   favoriteAuthor: {
     type: DataTypes.ARRAY,
     allowNull: true,
-    },
-    favoriteStories: {
-        type: DataTypes.ARRAY,
-        allowNull: true,
-        },
-        collections: {
-            type: DataTypes.ARRAY,
-            allowNull: true,
-            },
+  },
+  favoriteStories: {
+    type: DataTypes.ARRAY,
+    allowNull: true,
+  },
+  collections: {
+    type: DataTypes.ARRAY,
+    allowNull: true,
+  },
 });
-
