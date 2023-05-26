@@ -1,28 +1,37 @@
 [
     {
-      "name": "Sal",
-      "email": "sal@hotmail.com",
-      "password": "password12345"
+      "title": "Lion King",
+      "text": "once upon a time, Simba got lifted up by a baboon, his uncle killed his dad and then he ran away and ate bugs",
+      "genreTag1": "kids",
+      "author": "Jordan",
+      "dateUploaded": "2023-05-25"
+    },
+    { "title": "Lion King",
+    "text": "once upon a time, Simba got lifted up by a baboon, his uncle killed his dad and then he ran away and ate bugs",
+    "genreTag1": "kids",
+    "author": "Jordan",
+    "dateUploaded": "2023-05-25"
     },
     {
-      "name": "Lernantino",
-      "email": "lernantino@gmail.com",
-      "password": "password12345"
+      "title": "Lion King",
+      "text": "once upon a time, Simba got lifted up by a baboon, his uncle killed his dad and then he ran away and ate bugs",
+      "genreTag1": "kids",
+      "author": "Jordan",
+      "dateUploaded": "2023-05-25"
+      },
+      { "title": "Lion King",
+      "text": "once upon a time, Simba got lifted up by a baboon, his uncle killed his dad and then he ran away and ate bugs",
+      "genreTag1": "kids",
+      "author": "Jordan",
+      "dateUploaded": "2023-05-25"
     },
-    {
-      "name": "Amiko",
-      "email": "amiko2k20@aol.com",
-      "password": "password12345"
-    },
-    {
-      "name": "Jordan",
-      "email": "jordan99@msn.com",
-      "password": "password12345"
-    },
-    {
-      "name": "Blake",
-      "email": "the_blake@yahoo.com",
-      "password": "password12345"
-    }
+      {
+        "title": "Lion King",
+        "text": "once upon a time, Simba got lifted up by a baboon, his uncle killed his dad and then he ran away and ate bugs",
+        "genreTag1": "kids",
+        "author": "Jordan",
+        "dateUploaded": "2023-05-25"
+      }
+    
   ]
   

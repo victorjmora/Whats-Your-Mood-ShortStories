@@ -15,7 +15,7 @@ Story.init({
     allowNull: false,
   },
   text: {
-    type: DataTypes.MEDIUMTEXT, //max length 16,777,215
+    type: DataTypes.TEXT('medium'), //max length 16,777,215
     allowNull: false,
   },
   genreTag1: {
@@ -42,4 +42,13 @@ Story.init({
     type: DataTypes.INTEGER,
     allowNull: true,
   },
-});
+},
+{ sequelize,
+timestamps: false,
+freezeTableName: true,
+underscored: true,
+modelName: 'user',
+}
+);
+
+module.exports = Story;
