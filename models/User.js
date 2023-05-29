@@ -26,21 +26,41 @@ User.init({
     type: DataTypes.STRING,
     allowNull: false,
   },
-  role: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
+  //role: {
+  //type: DataTypes.STRING,
+  //allowNull: false,
+  //},
   favoriteAuthor: {
-    type: DataTypes.ARRAY,
+    type: DataTypes.ARRAY (DataTypes.STRING),
     allowNull: true,
+  },
+  favoriteStories: {
+    type: DataTypes.ARRAY (DataTypes.STRING),
+    allowNull: true,
+  },
+  collections: {
+    type: DataTypes.ARRAY (DataTypes.STRING),
+    allowNull: true,
+  },
+},
+{
+    hooks: {
+      beforeCreate: async (newUserData) => {
+        newUserData.password = await bcrypt.hash(newUserData.password, 10);
+        return newUserData;
+      },
+      beforeUpdate: async (updatedUserData) => {
+        updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+        return updatedUserData;
+      },
     },
-    favoriteStories: {
-        type: DataTypes.ARRAY,
-        allowNull: true,
-        },
-        collections: {
-            type: DataTypes.ARRAY,
-            allowNull: true,
-            },
-});
+    sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'user',
+  }
+);
+
+module.exports = User;
 
