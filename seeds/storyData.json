@@ -1,35 +1,36 @@
 [
     {
+      "id":1001,
       "title": "Lion King",
       "text": "once upon a time, Simba got lifted up by a baboon, his uncle killed his dad and then he ran away and ate bugs",
       "genreTag1": "kids",
-      "author": "Jordan",
+      "author": "Sal",
       "dateUploaded": "2023-05-25"
     },
-    { "title": "Lion King",
-    "text": "once upon a time, Simba got lifted up by a baboon, his uncle killed his dad and then he ran away and ate bugs",
+    { "title": "Charlotte's Web",
+    "text": "pig won't fulfill his destiny",
     "genreTag1": "kids",
     "author": "Jordan",
     "dateUploaded": "2023-05-25"
     },
     {
-      "title": "Lion King",
-      "text": "once upon a time, Simba got lifted up by a baboon, his uncle killed his dad and then he ran away and ate bugs",
-      "genreTag1": "kids",
-      "author": "Jordan",
+      "title": "Grapes of Wrath",
+      "text": "great depressions",
+      "genreTag1": "classics",
+      "author": "Amiko",
       "dateUploaded": "2023-05-25"
       },
-      { "title": "Lion King",
-      "text": "once upon a time, Simba got lifted up by a baboon, his uncle killed his dad and then he ran away and ate bugs",
-      "genreTag1": "kids",
+      { "title": "Romeo and Juliet",
+      "text": "teenager and older man commit double suicide",
+      "genreTag1": "classics",
       "author": "Jordan",
       "dateUploaded": "2023-05-25"
     },
       {
-        "title": "Lion King",
-        "text": "once upon a time, Simba got lifted up by a baboon, his uncle killed his dad and then he ran away and ate bugs",
+        "title": "Lilo and Stitch",
+        "text": "aliens learn to surf",
         "genreTag1": "kids",
-        "author": "Jordan",
+        "author": "Blake",
         "dateUploaded": "2023-05-25"
       }
     

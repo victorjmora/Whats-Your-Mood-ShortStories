@@ -30,16 +30,12 @@ User.init({
   //type: DataTypes.STRING,
   //allowNull: false,
   //},
-  favoriteAuthor: {
-    type: DataTypes.ARRAY (DataTypes.STRING),
-    allowNull: true,
-  },
+  //favoriteAuthor: {
+  //   type: DataTypes.ARRAY(DataTypes.STRING),
+  //   allowNull: true,
+  // },
   favoriteStories: {
-    type: DataTypes.ARRAY (DataTypes.STRING),
-    allowNull: true,
-  },
-  collections: {
-    type: DataTypes.ARRAY (DataTypes.STRING),
+    type: DataTypes.JSON, //contain a JSON object with story IDs
     allowNull: true,
   },
 },
