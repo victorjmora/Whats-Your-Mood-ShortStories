@@ -1,6 +1,6 @@
 const sequelize = require('../config/connection');
-const { User } = require('../models');
-const { Story } = require('../models')
+const { User, Story } = require('../models');
+
 
 const userData = require('./userData.json');
 const storyData = require('./storyData.json');
@@ -9,11 +9,15 @@ const seedDatabase = async () => {
     await sequelize.sync({force:true});
 
     //add sample user data to the User table/model in the database
-    await User.bulkCreate(userData, {
+    const users = await User.bulkCreate(userData, {
         individualHooks: true,
         returning: true,
     });
-    //await Story.bulkCreate(storyData);
+    // for (const story of storyData) {
+    //     await Story.create({...story,
+    //       user_id: users[Math.floor(Math.random() * users.length)].id,
+    //     });
+      }
 
     process.exit(0);
 };
