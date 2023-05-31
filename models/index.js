@@ -33,4 +33,4 @@ User.hasMany(Story, {
     as: 'user_favorites'
   });
 
-  module.exports = { User, Story };
+  module.exports = { User, Story , FavoriteStory };
