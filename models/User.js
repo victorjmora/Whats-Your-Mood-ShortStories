@@ -31,15 +31,15 @@ User.init({
   //allowNull: false,
   //},
   favoriteAuthor: {
-    type: DataTypes.ARRAY (DataTypes.STRING),
+    type: DataTypes.ARRAY(DataTypes.STRING),
     allowNull: true,
   },
   favoriteStories: {
-    type: DataTypes.ARRAY (DataTypes.STRING),
+    type: DataTypes.ARRAY(DataTypes.STRING),
     allowNull: true,
   },
   collections: {
-    type: DataTypes.ARRAY (DataTypes.STRING),
+    type: DataTypes.ARRAY(DataTypes.ARRAY(DataTypes.STRING)),
     allowNull: true,
   },
 },
