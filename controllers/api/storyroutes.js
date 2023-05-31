@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Story } = require('../../models');
 
-router.post('/', async (req, res) => {
+router.post('/', async (req, res) => { //tested successfully
   try {
     const newStory = await Story.create({
       ...req.body,
@@ -19,7 +19,8 @@ router.delete('/:id', async (req, res) => {
     const storyData = await Story.destroy({
       where: {
         id: req.params.id,
-        user_id: req.session.user_id,
+        user_id: req.session.user_id, //only the author is allowed to delete a story
+        //story_id: req.session.story_id,
       },
     });
 
