@@ -1,11 +1,12 @@
 const sequelize = require('../config/connection');
-const { User, Story } = require('../models');
+const { User, Story, FavoriteStory } = require('../models');
 
 const userData = require('./userData.json');
 const storyData = require('./storyData.json');
+const favoriteStoryData = require('./favoriteStoryData.json');
 
 const seedDatabase = async () => {
-    await sequelize.sync({force:true});
+    await sequelize.sync({ force: true });
 
     console.log(userData);
     //add sample user data to the User table/model in the database
@@ -13,13 +14,15 @@ const seedDatabase = async () => {
         individualHooks: true,
         returning: true,
     });
-     users
-     for (const story of storyData) {
-     await Story.create({
-             ...story,
-             user_id: users[Math.floor(Math.random() * users.length)].id, //create user_id, referenced in storyroutes.js
-         });
-     }
+
+    const stories = await Story.bulkCreate(storyData, {
+        returning: true,
+    });
+
+    const favoriteStory = await FavoriteStory.bulkCreate(favoriteStoryData, {
+        returning: true,
+    });
+    
     process.exit(0);
 };
 
