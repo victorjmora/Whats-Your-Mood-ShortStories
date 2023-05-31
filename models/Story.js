@@ -42,12 +42,19 @@ Story.init({
     type: DataTypes.INTEGER,
     allowNull: true,
   },
+  user_id: {  //the author's ID
+    type: DataTypes.INTEGER,
+    references: {
+      model: 'user',
+      key: 'id',
+    },
+  }
 },
 { sequelize,
 timestamps: false,
 freezeTableName: true,
 underscored: true,
-modelName: 'user',
+modelName: 'story',
 }
 );
 

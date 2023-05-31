@@ -2,10 +2,7 @@
   {
     "username": "Sal",
     "email": "sal@hotmail.com",
-    "password": "password12345",
-    "favoriteAuthor": ["Jordan", "Amiko", "Blake"],
-    "favoriteStories": ["Pocahantas"],
-    "collections": [["Disney Books", "Lion King", "Pocahantas"]]
+    "password": "password12345"
   },
   {
     "username": "Lernantino",
@@ -15,9 +12,7 @@
   {
     "username": "Amiko",
     "email": "amiko2k20@aol.com",
-    "password": "password12345",
-    "favoriteStories": [],
-    "collections": []
+    "password": "password12345"
   },
   {
     "username": "Jordan",
