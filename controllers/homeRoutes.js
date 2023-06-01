@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Story, User } = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/', async (req, res) => {
+router.get('/library', async (req, res) => {
   try {
     // Get all stories and JOIN with user data
     const storiesData = await Story.findAll({
@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
     const stories = storiesData.map((story) => story.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('home', { //render the home.handlebars view
+    res.render('library', { //render the library.handlebars view
       stories, 
       logged_in: req.session.logged_in 
     });
