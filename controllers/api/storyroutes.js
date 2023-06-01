@@ -1,7 +1,8 @@
 const router = require('express').Router();
 const { Story } = require('../../models');
+const withAuth = require('../../utils/auth');
 
-router.post('/', async (req, res) => {
+router.post('/', withAuth, async (req, res) => { //tested successfully
   try {
     const newStory = await Story.create({
       ...req.body,
@@ -14,15 +15,14 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', withAuth, async (req, res) => {
   try {
     const storyData = await Story.destroy({
       where: {
         id: req.params.id,
-        user_id: req.session.user_id,
+        //user_id: req.session.user_id,
       },
     });
-
     if (!storyData) {
       res.status(404).json({ message: 'No story found with this id!' });
       return;
