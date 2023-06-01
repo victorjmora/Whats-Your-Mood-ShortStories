@@ -15,7 +15,7 @@ Story.init({
     allowNull: false,
   },
   text: {
-    type: DataTypes.TEXT('medium'), //max length 16,777,215
+    type: DataTypes.TEXT('medium'), //max length 16,777,215 characters
     allowNull: false,
   },
   genreTag1: {
