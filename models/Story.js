@@ -32,11 +32,12 @@ Story.init({
   },
   author: {
     type: DataTypes.STRING,
-    allowNull: true,
+    allowNull: false,
   },
   dateUploaded: {
     type: DataTypes.DATE,
-    allowNull: true,
+    allowNull: false,
+    defaultValue: DataTypes.NOW,
   },
   starRating: {
     type: DataTypes.INTEGER,
