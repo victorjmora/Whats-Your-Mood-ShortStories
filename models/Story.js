@@ -15,12 +15,12 @@ Story.init({
     allowNull: false,
   },
   text: {
-    type: DataTypes.TEXT('medium'), //max length 16,777,215 characters
+    type: DataTypes.TEXT,
     allowNull: false,
   },
   genreTag1: {
     type: DataTypes.STRING,
-    allowNull: false,
+    allowNull: true,
   },
   genreTag2: {
     type: DataTypes.STRING,
@@ -37,6 +37,7 @@ Story.init({
   dateUploaded: {
     type: DataTypes.DATE,
     allowNull: false,
+    defaultValue: DataTypes.NOW,
   },
   starRating: {
     type: DataTypes.INTEGER,

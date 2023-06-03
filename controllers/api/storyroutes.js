@@ -7,6 +7,7 @@ router.post('/', withAuth, async (req, res) => { //tested successfully
     const newStory = await Story.create({
       ...req.body,
       user_id: req.session.user_id,
+      author: req.session.username,
     });
 
     res.status(200).json(newStory);
