@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Short Stories</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/star-rating.js/dist/star-rating.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.1-alpha/dist/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/cstyle.css"
+  </head>
+  <body>
+    <h1 class="center-align light-blue-text text-lighten-4">Children's Stories</h1>
+    <div class="section">
+      <div class="container amber lighten-5">
+        <div class="row">
+          <textbox class="col s12" id="storyDisplay">
+            This is a story about a group of bootcamp students. It's filled with
+            suspense, intrigue, frustration, anger, confusion, a-ha moments, enigmatic node terminal errors,
+            caffeine, late-night meltdowns, despair, triumph and all the things
+            that go with learning to code. We hope it will have a happy ending.  I typed more in here just to make sure it pushed the star ratings down as the box got longer, and it does.  Yippee!!
+          </textbox>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col s4 offset-s4 black">
+        <select class="star-rating">
+          <option value="">Select a rating</option>
+          <option value="5">Excellent</option>
+          <option value="4">Very Good</option>
+          <option value="3">Average</option>
+          <option value="2">Poor</option>
+          <option value="1">Terrible</option>
+      </select>
+      </div>
+    </div>
+  </div>
+    <script src="node_modules/star-rating.js/dist/star-rating.js"></script>
+    <script>
+      var stars = new StarRating(".star-rating");
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.1-alpha/dist/js/materialize.min.js"></script>
+  </body>
+</html>

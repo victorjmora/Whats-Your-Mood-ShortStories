@@ -1,0 +1,7 @@
+body {
+    background-image: linear-gradient(to right top, #e9c094, #e5b37e, #dfa667, #da9a51, #d48d3a, #ca832e, #bf7922, #b56f14, #a56613, #955c12, #855311, #764a10);
+    background-size: 100vw 100vh;
+} 
+#welcomeDisplay {
+    padding: 10%;
+}
