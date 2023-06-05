@@ -2,6 +2,10 @@ const router = require('express').Router();
 const { Story, User } = require('../models');
 const withAuth = require('../utils/auth');
 
+router.get('/', async (req, res) => {
+  res.render('home');
+})
+
 router.get('/library', async (req, res) => {
   try {
     // Get all stories and JOIN with user data
