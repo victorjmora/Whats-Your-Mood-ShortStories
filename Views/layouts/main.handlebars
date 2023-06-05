@@ -17,12 +17,16 @@
     <link rel="stylesheet" href="/css/hstyle.css" />
     <link rel="stylesheet" href="/css/mstyle.css" />
     <link rel="stylesheet" href="/css/homestyle.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/star-rating.js/dist/star-rating.css"
+    />
   </head>
 
   <body>
     <div class="flex-column justify-space-around">
       <header>
-        <h1 class="center-align">
+        <h1 class="center-align amber-text text-lighten-4">
           Short Story Library: Post Lit, Get Lit.
         </h1>
 
@@ -58,7 +62,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.1-alpha/dist/js/materialize.min.js"></script>
     <script src="/js/bookshelf.js"></script>
-    
+     <script src="node_modules/star-rating.js/dist/star-rating.js"></script>
+    <script>
+      var stars = new StarRating(".star-rating");
+    </script>
   </body>
 
 </html>
