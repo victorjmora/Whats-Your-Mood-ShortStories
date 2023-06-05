@@ -3,10 +3,8 @@ const { Story, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
-
-    // Pass serialized data and session flag into template
-    res.render('home' //render the home.handlebars view
-)});
+  res.render('home');
+})
 
 router.get('/library', async (req, res) => {
   try {
