@@ -1,4 +1,6 @@
-# Whats-Your-Mood-Short-Stories
+# Whats-Your-Mood-Short-Stories 
+
+<img src='./images/book.png' width=200 height=200>
 
 ## Description:
 
@@ -26,6 +28,22 @@ Be responsive.
 Be interactive (in other words, accept and respond to user input).
 Meet good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, and so on).
 Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
+
+## Technologies Used
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+<br>
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+<br>
+![Handlebars](https://img.shields.io/badge/Handlebars.js-000000.svg?style=for-the-badge&logo=handlebarsdotjs&logoColor=white)
+<br>
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+<br>
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+## Link to Deployed Application
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+<br>
+[link to Github](git@github.com:victorjmora/Whats-Your-Mood-ShortStories.git)
 
 ## Contributers:
 
