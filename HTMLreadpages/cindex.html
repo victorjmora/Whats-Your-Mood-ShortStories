@@ -13,19 +13,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.1-alpha/dist/css/materialize.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/cstyle.css"
+    <link rel="stylesheet" href="/css/cstyle.css"
   </head>
   <body>
     <h1 class="center-align light-blue-text text-lighten-4">Children's Stories</h1>
     <div class="section">
       <div class="container amber lighten-5">
-        <div class="row">
-          <textbox class="col s12" id="storyDisplay">
-            This is a story about a group of bootcamp students. It's filled with
-            suspense, intrigue, frustration, anger, confusion, a-ha moments, enigmatic node terminal errors,
-            caffeine, late-night meltdowns, despair, triumph and all the things
-            that go with learning to code. We hope it will have a happy ending.  I typed more in here just to make sure it pushed the star ratings down as the box got longer, and it does.  Yippee!!
-          </textbox>
+        <div class="row" id="storyDisplay">
+          <div class="col s12">
+            {{text}}
+          </div>
         </div>
       </div>
     </div>
