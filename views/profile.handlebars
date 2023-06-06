@@ -7,7 +7,7 @@
     <title>Document</title>
     <link
     rel="stylesheet"
-    href="node_modules/star-rating.js/dist/star-rating.css"
+    href="/star-rating/dist/star-rating.css"
   />
   <link
     rel="stylesheet"
@@ -16,17 +16,13 @@
   <link rel="stylesheet" href="/css/homestyle.css">
 </head>
 <body>
-    <div class="row">
-        <div class="col s12 center-align">
-            <h2>Welcome, {{username}}!</h2>
-        </div>
-    </div>
+    <h2 class="center-align">Welcome, {{username}}!</h2> 
     <h4 class="center-align">Write a New Story</h4>
+    <div class="container">
     <div class="row">
       <div class = "col s12 center-align">
-        
         <h5>Give Your Story A Title:</h5>
-        <form class="form new-story-form col s6 ">
+        <form class="form new-story-form col s6">
           <div class="row">
             <div class="input-field col s6 offset-s3">
                 <input placeholder="Story Title" id="story-title" type="text">
@@ -46,13 +42,11 @@
            </div>
            <h5>Write Your Story Here:</h5>
             <div class="row">
-            
-            <div class="input-field col s6 offset-s3">
-              <textarea placeholder="Write Your Story Here" id="story-text" type="text" class="validate">
-              </textarea>
-          </div>
-           <button type="submit"><a class="waves-effect waves-light btn green">Create</a></button>
-        </div>  
+              <div class="input-field col s6 offset-s3">
+                <textarea placeholder="Write Your Story Here" id="story-text" type="text" class="validate">
+                </textarea>
+                <button class="waves-effect waves-light btn green" type="submit">Create</a>
+              </div>
             </div>
           </div> 
         </div>
@@ -66,18 +60,18 @@
             <div class="col s6 center-align">
               <h4><a href="/story/{{story.id}}">{{story.title}}</a></h4>
             </div>
-            <div class="col s4 right">
-                <a class="waves-effect waves-light btn red" data-id="{{story.id}}">Delete</a>
+            <div class="col s4">
+                <button class="waves-effect waves-light btn red" data-id="{{story.id}}">Delete</button>
             </div>
           </div>
           {{/each}}
         </div>
         {{/if}}
       </div>
-      
+     </div> 
       <script src="./js/profile.js"></script>
       
-
+      <script src="/star-rating/dist/star-rating.js"></script>
 
           <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.1-alpha/dist/js/materialize.min.js"></script> 
 </body>
