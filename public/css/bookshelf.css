@@ -279,3 +279,6 @@
   }
   /* BACK ARROW */
   
+  .topZ {
+    z-index: 11;
+  }

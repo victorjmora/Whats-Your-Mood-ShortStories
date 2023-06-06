@@ -20,7 +20,7 @@ Story.init({
   },
   genreTag1: {
     type: DataTypes.STRING,
-    allowNull: true,
+    allowNull: false,
   },
   genreTag2: {
     type: DataTypes.STRING,
