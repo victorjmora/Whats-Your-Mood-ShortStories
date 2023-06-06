@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Story } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+
 router.post('/', withAuth, async (req, res) => { //tested successfully
   try {
     const newStory = await Story.create({
