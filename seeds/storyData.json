@@ -1,0 +1,150 @@
+[
+  {
+    "id":1001,
+    "title": "Lion King",
+    "text": "The Lion King tells the story of Simba, a young lion prince who faces adversity and loss after his father's tragic death. Exiled, Simba must confront his past and embrace his destiny to reclaim his kingdom from the treacherous Scar. It's a timeless tale of redemption, identity, and the circle of life.",
+    "genreTag1": "Kids",
+    "author": "Sal",
+    "dateUploaded": "2023-05-28"
+  },
+  { "title": "Charlotte's Web",
+  "text": "Charlotte's Web is a heartwarming story of friendship between a pig named Wilbur and a spider named Charlotte. Charlotte uses her web to save Wilbur from being eaten, capturing the attention of humans who recognize the value of every life. It's a tale of compassion, sacrifice, and the power of words.",
+  "genreTag1": "Kids",
+  "author": "Jordan",
+  "dateUploaded": "2023-05-29"
+  },
+  {
+    "title": "Peter Pan",
+  "text": "Peter Pan tells the enchanting story of a boy who never grows up. With his fairy companion Tinker Bell, Peter Pan whisks away Wendy Darling and her brothers to the magical world of Neverland. There, they face swashbuckling adventures, encounter the villainous Captain Hook, and discover the power of imagination and eternal youth.",
+  "genreTag1": "Kids",
+  "author": "Jordan",
+  "dateUploaded": "2023-05-25"
+  },
+  {
+    "title": "Lilo and Stitch",
+    "text": "Lilo and Stitch follows the story of a young Hawaiian girl named Lilo and her mischievous alien friend, Stitch. As they form an unlikely bond, they navigate through humorous and heartwarming adventures while learning the true meaning of family, love, and acceptance.",
+    "genreTag1": "Kids",
+    "author": "Blake",
+    "dateUploaded": "2023-05-26"
+  },
+  {
+    "title": "The Little Mermaid",
+    "text": "The Little Mermaid is a captivating tale of a young mermaid named Ariel who dreams of life on land. She makes a deal with the sea witch Ursula to become human, but sacrifices her voice in the process. Through love, self-discovery, and courage, Ariel learns the true meaning of acceptance and finding her own voice.",
+    "genreTag1": "Kids",
+    "author": "Blake",
+    "dateUploaded": "2023-03-10"
+  },
+  {
+    "title": "The Shining",
+    "text": "The Shining follows the Torrance family as they caretake the secluded Overlook Hotel. Jack Torrance's descent into madness and the psychic abilities of his son Danny create a terrifying and atmospheric tale of isolation, supernatural forces, and the haunting consequences of past tragedies.",
+    "genreTag2": "Horror",
+    "author": "Amiko",
+    "dateUploaded": "2023-03-15"
+    },
+    {
+      "title": "The Pit and The Pendulum",
+    "text": "The Pit and the Pendulum is a chilling short story by Edgar Allan Poe. A prisoner navigates a torture chamber with a swinging pendulum, narrowly escaping death. The story explores themes of fear, despair, and the triumph of the human spirit in the face of imminent doom.",
+    "genreTag2": "Horror",
+    "author": "Amiko",
+    "dateUploaded": "2023-04-27"
+    },
+    { 
+      "title": "I am Legend",
+    "text": "I Am Legend portrays a post-apocalyptic world where Robert Neville, the last human survivor, battles vampires who have taken over. As he navigates isolation and loss, Neville seeks a cure while facing the question of who truly remains the legend in a world turned upside down.",
+    "genreTag2": "Horror",
+    "author": "Jordan",
+    "dateUploaded": "2023-06-02"
+  },
+  {
+    "title": "The Body",
+    "text": "The Body, a novella by Stephen King, follows four friends as they embark on a journey to find a missing boy's corpse. Through their adventure, they confront fears, reflect on mortality, and come of age, discovering the complexities of friendship and the bittersweet nature of growing up.",
+    "genreTag2": "Horror",
+    "author": "Jordan",
+    "dateUploaded": "2023-04-21"
+  },
+  {
+    "title": "The Legend of Sleepy Hollow",
+  "text": "The Legend of Sleepy Hollow tells the eerie tale of Ichabod Crane, a superstitious schoolteacher, and the Headless Horseman. Set in a quiet town, the story weaves elements of romance, mystery, and the supernatural, leaving readers pondering the blurred lines between reality and folklore.",
+  "genreTag2": "Horror",
+  "author": "Sal",
+  "dateUploaded": "2023-02-25"
+  },
+    {
+      "title": "The Hobbit",
+      "text": "The Hobbit is a fantastical tale about Bilbo Baggins, a timid hobbit who joins a company of dwarves led by Thorin Oakenshield. Together, they embark on a perilous journey to reclaim the Lonely Mountain from the fearsome dragon Smaug, encountering trolls, elves, goblins, and a precious ring along the way.",
+      "genreTag3": "Fantasy",
+      "author": "Sal",
+      "dateUploaded": "2023-01-25"
+    },
+    {
+      "title": "Harry Potter",
+      "text": "Harry Potter chronicles the extraordinary journey of a young wizard, Harry Potter, as he discovers his magical heritage and attends Hogwarts School of Witchcraft and Wizardry. Alongside his friends, Harry battles dark forces, unravels his destiny, and learns the true power of love and friendship in a world of magic and adventure.",
+      "genreTag3": "Fantasy",
+      "author": "Sal",
+      "dateUploaded": "2023-03-18"
+    },
+    {
+      "title": "The Alchemist",
+      "text": "The Alchemist follows the journey of Santiago, an Andalusian shepherd boy, who embarks on a quest to find his Personal Legend. Through encounters with a wise alchemist and mystical omens, he learns the secrets of following his dreams and discovering the true meaning of life.",
+      "genreTag3": "Fantasy",
+      "author": "Lernantino",
+      "dateUploaded": "2023-02-23"
+    },
+    {
+      "title": "The Lion, The Witch And The Wardrobe",
+      "text": "The Lion, the Witch, and the Wardrobe is a captivating fantasy tale. Four siblings stumble upon a magical wardrobe that leads to the enchanting land of Narnia. They join forces with talking animals and Aslan the lion to defeat the White Witch and restore peace to the land.",
+      "genreTag3": "Fantasy",
+      "author": "Lernantino",
+      "dateUploaded": "2023-05-21"
+    },
+    {
+      "title": "A Wizard of EarthSea",
+      "text": "A Wizard of Earthsea follows the journey of Ged, a young wizard with immense power, as he learns the ways of magic and faces the consequences of his actions. Battling his own inner darkness and confronting ancient evils, Ged strives to find balance and become a true master of his craft.",
+      "genreTag3": "Fantasy",
+      "author": "Lernantino",
+      "dateUploaded": "2023-05-03"
+    },
+    {
+      "title": "The Magicians Nephew",
+      "text": "The Magician's Nephew unveils the origins of the magical realm of Narnia. Two children, Digory and Polly, embark on an adventure that leads them to witness the creation of Narnia and encounter the powerful lion Aslan. They must make choices that shape the destiny of this enchanting world.",
+      "genreTag3": "Fantasy",
+      "author": "Sal",
+      "dateUploaded": "2023-03-06"
+    },
+    {
+      "title": "The Murders In The Rue Morgue",
+      "text": "The Murders in the Rue Morgue is a gripping detective story by Edgar Allan Poe. C. Auguste Dupin, a brilliant amateur detective, investigates a brutal double murder in Paris. Through his exceptional analytical skills, Dupin unravels the perplexing mystery, unveiling a shocking truth that challenges conventional thinking.",
+      "genreTag4": "Mystery",
+      "author": "Amiko",
+      "dateUploaded": "2023-05-13"
+    },
+    {
+      "title": "Angels and Demons",
+      "text": "Angels & Demons follows symbologist Robert Langdon as he unravels a plot to destroy the Vatican. With the help of physicist Vittoria Vetra, Langdon races against time to decipher clues, uncover ancient secrets, and confront the Illuminati. The story explores the battle between science, religion, and the forces of good and evil.",
+      "genreTag4": "Mystery",
+      "author": "Amiko",
+      "dateUploaded": "2023-05-04"
+    },
+    {
+      "title": "The Secret of The Old CLock",
+      "text": "In The Secret of the Old Clock Nancy Drew, a young detective, sets out to solve the mystery of a missing will. Along the way, she uncovers hidden clues, encounters suspicious characters, and unravels a secret that will change lives. It's a classic tale of adventure, sleuthing, and justice.",
+      "genreTag4": "Mystery",
+      "author": "Lernantino",
+      "dateUploaded": "2023-03-14"
+    },
+    {
+      "title": "The Name of The Rose",
+      "text": "The Name of the Rose delves into a medieval monastery where Brother William investigates a series of murders. As he uncovers the dark secrets lurking within the abbey's walls, the story explores themes of religion, knowledge, and the dangers of fanaticism in a richly atmospheric and intellectually engaging narrative.",
+      "genreTag4": "Mystery",
+      "author": "Jordan",
+      "dateUploaded": "2023-03-21"
+    },
+    {
+      "title": "A Study in Scarlet",
+      "text": "A Study in Scarlet introduces the iconic detective Sherlock Holmes and his loyal companion Dr. John Watson. As they investigate a murder, the story unveils a tale of revenge and hidden motives. This thrilling debut of Holmes and Watson showcases their brilliant deductions and unique partnership.",
+      "genreTag4": "Mystery",
+      "author": "Jordan",
+      "dateUploaded": "2023-04-13"
+    }
+
+  ]

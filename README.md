@@ -1,5 +1,6 @@
 # Whats-Your-Mood-Short-Stories
 
+
 ## Our Story
 Our teams motivation for building this application was to have a short story library at our fingertips. We wanted the user to experience a quality short story library, where they can browse different generes and explore new authors without all the frustration of reseaching on their own. It solves the common issue many readers face, exploring new genres and finding a new favorite author without having to commit to an entire book.
 
@@ -33,6 +34,7 @@ Meet good-quality coding standards (file structure, naming conventions, follows 
 Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
 ## Contributers:
+
 Sabrina Doerfler,
 Lori Haffelt,
 James McConnaughey,
