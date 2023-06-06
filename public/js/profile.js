@@ -3,12 +3,13 @@ const newFormHandler = async (event) => {
   
     const title = document.querySelector('#story-title').value.trim();
     //TODO: add a selector(s) for the genre tags
-    const genreTag1 = "classics";
+    const genreTag1 = document.querySelector('#form-select-1').value.trim();
     //const needed_funding = document.querySelector('#project-funding').value.trim();
     const text = document.querySelector('#story-text').value.trim();
     
 
-    if (title && text) {
+    if (title && text && genreTag1 ) {//check for title, text and genretag before accepting a new story
+      
       const response = await fetch(`/api/story`, {
         method: 'POST',
         body: JSON.stringify({ title, text, genreTag1 }),
