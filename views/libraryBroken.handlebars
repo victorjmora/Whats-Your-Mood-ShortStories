@@ -1,0 +1,190 @@
+<head>
+  <link rel="stylesheet" href="/css/bookshelf.css" />
+</head>
+
+
+<div class="bookshelfDisplay">
+  <div class='bg-dark'>
+    <div id='shelf'>
+
+
+    {{!-- This is the HORROR Genre book --}}
+    <div class='book-bg data'>
+      <div class='book'>
+        <div id='book-shading'></div>
+        <h1 style='margin-left: 2px; line-height: 10%'>HORROR</h1>
+        <div class='contents'>
+          <div id='back'><svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+              <path
+                d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+            </svg></div>
+          <div class='page'>
+          {{#each stories as |story| }}
+            {{#ifEquals story.genreTag1 "Horror"}}
+            <a class= "topZ" href="/story/{{story.id}}">{{story.title}}</a>
+            {{/ifEquals}}
+          {{/each}}
+          </div>
+          <div class='page'>
+            <div>
+              <p class='text'>&emsp;</p>
+            </div>
+            
+            <div>
+              <p class='text'>&emsp;A Short Collection of Spine tingling tales and things that go bump in the night.</p>
+
+            </div>
+            <div id='page-shading'></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class='book-bg photo'>
+      <div class='book'>
+        <div id='book-shading'></div>
+        <h3 style='margin-left: 7px; line-height: 10%'>Mystery</h3>
+        <div class='contents'>
+          <div id='back'><svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+              <path
+                d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+            </svg></div>
+          <div class='page'>
+          {{#each stories as |story| }}
+            {{#ifEquals story.genreTag1 "Mystery"}}
+            <a class= "topZ" href="/story/{{story.id}}">{{story.title}}</a>
+            {{/ifEquals}}
+          {{/each}}
+          </div>
+          <div class='page'>
+            
+            <div>
+              <p class='text'>&emsp;</p>
+            </div>
+            
+            <div>
+              <p class='text'>&emsp;A Short Collection That Will Keep You Guessing And On The Edge Of Your Seat.</p>
+
+            </div>
+            <div id='page-shading'></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class='book-bg landscape'>
+      <div class='book flex-column'>
+        <div id='book-shading'></div>
+        
+        <h3 style=style='margin-left: 2px; line-height: 10%'>Kids books</h3>
+        <div class='contents'>
+          <div id='back'>
+            <svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+              <path
+                d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+            </svg></div>
+            <div class='page'>
+          {{#each stories as |story| }}
+            {{#ifEquals story.genreTag1 "Kids"}}
+            <a class= "topZ" href="/story/{{story.id}}">{{story.title}}</a>
+            {{/ifEquals}}
+          {{/each}}
+          </div>
+          <div class='page'>
+            <div>
+              
+              <p class='text'>&emsp;Short Tales For Kids of All Ages Lets Go On A Adventure Together.</p>
+
+            </div>
+            <div id='page-shading'></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class='book-bg writing'>
+      <div class='book'>
+        <div id='book-shading'></div>
+        <h3 style='margin-left: 2px; line-height: 10%'>POETS</h3>
+        
+        <div class='contents'>
+          <div id='back'><svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+              <path
+                d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+            </svg></div>
+          <div class='page'>
+            <div>
+              <h3 style='text-align: center'>Nothin Here Yet!</h3>
+              <p class='text'>&emsp;So Ill Give It A Shot!</p>
+              
+            </div>
+          </div>
+          <div class='page'>
+            <div style='text-align: center'>
+              <p class='text'>So Lonely In Here, But Not For Long Soon It Gets Filled With Your Work, Then the Gloom Will Appear Some Will cheer Others Wil Say Go See A Doc.</p>
+
+            </div>
+            <div class='page'>
+              <div style='text-align: center'>
+                <h3>Writing</h3>
+                <p class='text'>Something incredible is waiting<br>to be known<br>vastness is bearable only through
+                  love<br>star stuff harvesting star light<br>a billion trillion hearts<br>of the stars<br>quis nostrum
+                  exercitationem<br>ullam corporis suscipit laboriosam.<br>Encyclopaedia galactica intelligent
+                  beings<br>ship of the imagination<br>with pretty stories<br>for which there's little good
+                  evidence<br>Apollonius of Perga<br>stirred by starlight?</p>
+              </div>
+            </div>
+            <div id='page-shading'></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class='book-bg web'>
+      <div class='book'>
+        <div id='book-shading'></div>
+        <h1>Sci Fi</h1>
+        
+        <div class='contents'>
+          <div id='back'><svg viewBox="0 0 512 512" width="100" title="chevron-circle-left">
+              <path
+                d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+            </svg></div>
+          <div class='page'>
+            <h1>Science Fiction</h1>
+            <p class='text'>&emsp;A Collection Of  Short Stories involving Space, Aliens, Strange Planets In The Cosmos.</p>
+          
+          </div>
+          <div class='page'>
+            <div class='illus'
+              style='background-image: url(https://images.wsj.net/im-448248?width=600&height=600)'>
+
+            </div>
+            <div id='page-shading'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="plainDisplay">
+  {{#each stories as |story| }}
+  <div class="row mb-4 project">
+    <div class="col-md-5">
+      <h2>
+        <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+        {{{get_emoji}}}
+        <a href="/story/{{story.id}}">{{story.title}}</a>
+      </h2>
+      <p>Created by {{story.author}} on {{format_date story.dateUploaded}}</p>
+    </div>
+    <div class="col-md-7">
+      <p>
+        {{story.text}}
+      </p>
+    </div>
+  </div>
+  {{/each}}
+</div>

@@ -22,9 +22,10 @@ module.exports = {
   } else if (genre === "SciFi") {
     return `<span for="img" aria-label="scifi">👽</span>`;
 }
-  }
-}
+  },
+
 
 ifEquals:(arg1, arg2, options) => { 
   return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+}
 };
