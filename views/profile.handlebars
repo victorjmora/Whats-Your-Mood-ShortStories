@@ -1,46 +1,84 @@
-<div class="row">
-  <div class="col-auto">
-    <h2>Welcome, {{username}}!</h2>
-  </div>
-</div>
-
-<div class="row mt-4">
-  <div class="col-md-6">
-    <h3>Write a New Story:</h3>
-
-    <form class="form new-story-form">
-      <div class="form-group">
-        <label for="story-title">Story Title:</label>
-        <input class="form-input" type="text" id="story-title" name="story-title" />
-      </div>
-    {{!-- TODO - insert a drop down selector for genre tags --}}
-
-      <div class="form-group">
-        <label for="story-text">Type your story:</label>
-        <textarea class="form-input" id="story-text" name="story-text"></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
-    </form>
-  </div>
-
-  {{#if stories.length}}
-  <div class="col-md-6 story-list">
-    <h3>Your Stories:</h3>
-
-    {{#each stories as |story|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/story/{{story.id}}">{{story.title}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{story.id}}">DELETE</button>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="node_modules/star-rating.js/dist/star-rating.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.1-alpha/dist/css/materialize.min.css"
+  />
+  <link rel="stylesheet" href="/css/homestyle.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col s12 center-align">
+            <h2>Welcome, {{username}}!</h2>
+        </div>
     </div>
-    {{/each}}
-  </div>
-  {{/if}}
-</div>
+    <h4 class="center-align">Write a New Story</h4>
+    <div class="row">
+      <div class = "col s12 center-align">
+        
+        <h5>Give Your Story A Title:</h5>
+        <form class="form new-story-form col s6 ">
+          <div class="row">
+            <div class="input-field col s6 offset-s3">
+                <input placeholder="Story Title" id="story-title" type="text">
+            </div> 
+           </div>
+           <h5>Please Select a Genre:</h5>
+           <div class="row">
+            <div class="input-field col s6 offset-s3">
+                <select id="form-select-1" class="browser-default">
+                  <option value="" disabled selected></option>
+                  <option value="1">Children</option>
+                  <option value="2">Fantasy</option>
+                  <option value="3">Horror</option>
+                  <option value="4">Mystery</option>
+                </select>
+              </div>
+           </div>
+           <h5>Write Your Story Here:</h5>
+            <div class="row">
+            
+            <div class="input-field col s6 offset-s3">
+              <textarea placeholder="Write Your Story Here" id="story-text" type="text" class="validate">
+              </textarea>
+          </div>
+            <a class="waves-effect waves-light btn green">Create</a>
+        </div>  
+            </div>
+          </div> 
+        </div>
+        
+        {{#if stories.length}}
+        <div class="col s6 story-list">
+          <h3 center-align>Your Stories:</h3>
+      
+          {{#each stories as |story|}}
+          <div class="row">
+            <div class="col s6">
+              <h4><a href="/story/{{story.id}}">{{story.title}}</a></h4>
+            </div>
+            <div class="col s4">
+                <a class="waves-effect waves-light btn red" data-id="{{story.id}}">Delete</a>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+        {{/if}}
+      </div>
+      
+      <script src="./js/profile.js"></script>
+      
 
-<script src="./js/profile.js"></script>
+
+          <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.1-alpha/dist/js/materialize.min.js"></script> 
+</body>
+</html>
