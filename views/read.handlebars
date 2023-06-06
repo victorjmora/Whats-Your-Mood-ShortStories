@@ -5,31 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Short Stories</title>
+      
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.1-alpha/dist/css/materialize.min.css"
     />
-    <link rel="stylesheet" href="/css/homestyle.css">
-     <link
+    <link rel="stylesheet" href="/css/cstyle.css">
+    <link
       rel="stylesheet"
       href="node_modules/star-rating.js/dist/star-rating.css"
     />
+   
   </head>
   <body>
     <h1 class="center-align amber-text text-lighten-4">Enjoy and Rate</h1>
     <div class="section">
       <div class="container amber lighten-5">
-        <div class="row" id="storyDisplay">
-            <div class="col s12"> 
+        <div class="row" >
+            <div class="col s12" id="storyDisplay"> 
             {{text}}
         </div>
       </div>
     </div>
-  </div>
-    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.1-alpha/dist/js/materialize.min.js"></script>
+  <div class="container">
+      <div class="row">
+        <div class="col s4 offset-s4 black">
+        <select class="star-rating">
+          <option value="">Select a rating</option>
+          <option value="5">Excellent</option>
+          <option value="4">Very Good</option>
+          <option value="3">Average</option>
+          <option value="2">Poor</option>
+          <option value="1">Terrible</option>
+      </select>
+      </div>
+    </div>
+   </div>
+
+    
     <script src="node_modules/star-rating.js/dist/star-rating.js"></script>
     <script>
       var stars = new StarRating(".star-rating");
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.1-alpha/dist/js/materialize.min.js"></script>
   </body>
 </html> 
