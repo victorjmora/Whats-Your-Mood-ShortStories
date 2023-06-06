@@ -282,3 +282,25 @@
   .topZ {
     z-index: 11;
   }
+
+  /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Mobile devices - hide the bookshelf, show the plain */
+@media all and (min-width: 601px) {
+  .bookshelfDisplay {
+    display: block;
+  }
+  .plainDisplay {
+    display: none;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .plainDisplay {
+    display: block;
+  }
+  .bookshelfDisplay {
+    display: none;
+  }
+}
+
