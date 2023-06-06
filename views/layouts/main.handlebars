@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/css/homestyle.css" />
     <link
       rel="stylesheet"
-      href="node_modules/star-rating.js/dist/star-rating.css"
+      href="/star-rating/dist/star-rating.css"
     />
   </head>
 
@@ -32,20 +32,18 @@
 
          <nav>
     <div class="nav-wrapper brown darken-1">
-      <ul id="nav-mobile" class="center-align hide-on-med-and-down ">
+      <ul id="nav-mobile" class="hide-on-med-and-down ">
         <li><a href="/">Home</a></li>
         <li><a href="/library">Library</a></li>
-        <li><a href="/read">Read</a></li>
-
       </ul>
 
           <!-- Conditionally render login or logout links -->
           {{#if logged_in}}
             <a href="/profile">Profile</a>
             <button
-              class="waves-effect waves-light btn-large orange lighten-1 brown-text brown-darken-1" href="/logout" id="logout">Logout</button>
+              class="waves-effect waves-light btn-large orange lighten-1 brown-text brown-darken-1 right" href="/logout" id="logout">Logout</button>
           {{else}}
-            <a class="waves-effect waves-light btn-large amber lighten-3 brown-text brown-darken-1" href="/login">Login</a>
+            <a class="waves-effect waves-light btn-large amber lighten-3 brown-text brown-darken-1 right" href="/login">Login</a>
           {{/if}}
         </nav>
       </header>
@@ -62,7 +60,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.1-alpha/dist/js/materialize.min.js"></script>
     <script src="/js/bookshelf.js"></script>
-     <script src="node_modules/star-rating.js/dist/star-rating.js"></script>
+     <script src="/star-rating/dist/star-rating.js"></script>
     <script>
       var stars = new StarRating(".star-rating");
     </script>
