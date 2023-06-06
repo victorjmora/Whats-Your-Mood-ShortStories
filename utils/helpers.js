@@ -7,13 +7,13 @@ module.exports = {
     // format large numbers with commas
     return parseInt(amount).toLocaleString();
   },
-  get_emoji: () => {
+  get_emoji: (genretag) => {
     const randomNum = Math.random();
 
     // Return a random emoji
-    if (randomNum > 0.7) {
+    if (genretag === "Kids") {
       return `<span for="img" aria-label="lightbulb">💡</span>`;
-    } else if (randomNum > 0.4) {
+    } else if (genretag === "") {
       return `<span for="img" aria-label="laptop">💻</span>`;
     } else {
       return `<span for="img" aria-label="gear">⚙️</span>`;
