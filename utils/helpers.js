@@ -11,15 +11,21 @@ module.exports = {
     const randomNum = Math.random();
 
     // Return a random emoji
-    if (randomNum > 0.7) {
-      return `<span for="img" aria-label="lightbulb">💡</span>`;
-    } else if (randomNum > 0.4) {
-      return `<span for="img" aria-label="laptop">💻</span>`;
-    } else {
-      return `<span for="img" aria-label="gear">⚙️</span>`;
-    }
-  },
-
+    if (genre === "Horror") {
+      return `<span for="img" aria-label="skull">💀</span>`;
+    } else if (genre === "Fantasy") {
+      return `<span for="img" aria-label="mermaid">🧜‍♀️</span>`;
+    } else if (genre === "Mystery") {
+      return `<span for="img" aria-label="mystery">🔍</span>`;
+    } else if (genre === "Kids") {
+      return `<span for="img" aria-label="kids">🍭</span>`;
+  } else if (genre === "Classic") {
+    return `<span for="img" aria-label="classic">📜</span>`;
+  } else if (genre === "SciFi") {
+    return `<span for="img" aria-label="scifi">👽</span>`;
+}
+  }
+}
 ifEquals:(arg1, arg2, options) => { 
   return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
-}};
+};
