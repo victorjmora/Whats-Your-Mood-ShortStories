@@ -2,9 +2,7 @@ const newFormHandler = async (event) => {
     event.preventDefault();
   
     const title = document.querySelector('#story-title').value.trim();
-    //TODO: add a selector(s) for the genre tags
     const genreTag1 = document.querySelector('#form-select-1').value.trim();
-    //const needed_funding = document.querySelector('#project-funding').value.trim();
     const text = document.querySelector('#story-text').value.trim();
     
 
@@ -27,6 +25,7 @@ const newFormHandler = async (event) => {
   };
   
   const delButtonHandler = async (event) => {
+    console.log("reached delete button handler on front end");
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
   

@@ -18,6 +18,7 @@ router.post('/', withAuth, async (req, res) => { //tested successfully
 });
 
 router.delete('/:id', withAuth, async (req, res) => {
+  console.log("delete route reached on the backend");
   try {
     const storyData = await Story.destroy({
       where: {

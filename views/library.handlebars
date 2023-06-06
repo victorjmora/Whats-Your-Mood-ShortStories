@@ -1,26 +1,12 @@
-{{!-- <div class="plainDisplay">
-{{#each stories as |story| }}
-<div class="row mb-4 project">
-  <div class="col-md-5">
-    <h2>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      {{{get_emoji}}}
-      <a href="/story/{{story.id}}">{{story.title}}</a>
-    </h2>
-    <p>Created by {{story.author}} on {{format_date story.dateUploaded}}</p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      {{story.text}}
-    </p>
-  </div>
-</div>
-{{/each}}
-</div> --}}
+<head>
+  <link rel="stylesheet" href="/css/bookshelf.css" />
+</head>
 
 
-<body class='bookshelfDisplay bg-dark'>
-  <div id='shelf'>
+<div class="bookshelfDisplay">
+  <div class='bg-dark'>
+    <div id='shelf'>
+
 
     {{!-- This is the HORROR Genre book --}}
     <div class='book-bg data'>
@@ -46,11 +32,13 @@
             
             <div>
               <p class='text'>&emsp;A Short Collection of Spine tingling tales and things that go bump in the night.</p>
+
             </div>
+            <div id='page-shading'></div>
           </div>
-          <div id='page-shading'></div>
         </div>
       </div>
+
     </div>
     <div class='book-bg photo'>
       <div class='book'>
@@ -76,11 +64,13 @@
             
             <div>
               <p class='text'>&emsp;A Short Collection That Will Keep You Guessing And On The Edge Of Your Seat.</p>
+
             </div>
+            <div id='page-shading'></div>
           </div>
-          <div id='page-shading'></div>
         </div>
       </div>
+
     </div>
     <div class='book-bg landscape'>
       <div class='book flex-column'>
@@ -104,11 +94,13 @@
             <div>
               
               <p class='text'>&emsp;Short Tales For Kids of All Ages Lets Go On A Adventure Together.</p>
+
             </div>
+            <div id='page-shading'></div>
           </div>
-          <div id='page-shading'></div>
         </div>
       </div>
+
     </div>
     <div class='book-bg writing'>
       <div class='book'>
@@ -130,11 +122,23 @@
           <div class='page'>
             <div style='text-align: center'>
               <p class='text'>So Lonely In Here, But Not For Long Soon It Gets Filled With Your Work, Then the Gloom Will Appear Some Will cheer Others Wil Say Go See A Doc.</p>
+
             </div>
+            <div class='page'>
+              <div style='text-align: center'>
+                <h3>Writing</h3>
+                <p class='text'>Something incredible is waiting<br>to be known<br>vastness is bearable only through
+                  love<br>star stuff harvesting star light<br>a billion trillion hearts<br>of the stars<br>quis nostrum
+                  exercitationem<br>ullam corporis suscipit laboriosam.<br>Encyclopaedia galactica intelligent
+                  beings<br>ship of the imagination<br>with pretty stories<br>for which there's little good
+                  evidence<br>Apollonius of Perga<br>stirred by starlight?</p>
+              </div>
+            </div>
+            <div id='page-shading'></div>
           </div>
-          <div id='page-shading'></div>
         </div>
       </div>
+
     </div>
     <div class='book-bg web'>
       <div class='book'>
@@ -154,11 +158,33 @@
           <div class='page'>
             <div class='illus'
               style='background-image: url(https://images.wsj.net/im-448248?width=600&height=600)'>
+
             </div>
+            <div id='page-shading'></div>
           </div>
-          <div id='page-shading'></div>
         </div>
       </div>
     </div>
   </div>
-</body>
+</div>
+
+
+<div class="plainDisplay">
+  {{#each stories as |story| }}
+  <div class="row mb-4 project">
+    <div class="col-md-5">
+      <h2>
+        <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+        {{{get_emoji}}}
+        <a href="/story/{{story.id}}">{{story.title}}</a>
+      </h2>
+      <p>Created by {{story.author}} on {{format_date story.dateUploaded}}</p>
+    </div>
+    <div class="col-md-7">
+      <p>
+        {{story.text}}
+      </p>
+    </div>
+  </div>
+  {{/each}}
+</div>

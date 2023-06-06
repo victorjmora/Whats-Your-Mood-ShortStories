@@ -7,10 +7,8 @@ module.exports = {
     // format large numbers with commas
     return parseInt(amount).toLocaleString();
   },
-  get_emoji: () => {
-    const randomNum = Math.random();
+  get_emoji: (genre) => {
 
-    // Return a random emoji
     if (genre === "Horror") {
       return `<span for="img" aria-label="skull">💀</span>`;
     } else if (genre === "Fantasy") {
@@ -26,6 +24,7 @@ module.exports = {
 }
   }
 }
+
 ifEquals:(arg1, arg2, options) => { 
   return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
 };

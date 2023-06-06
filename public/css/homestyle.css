@@ -5,3 +5,9 @@ body {
 #welcomeDisplay, #storyDisplay{
     padding: 10%;
 }
+.nav-wrapper>li {
+    font-size: 4em;
+}
+.topZ {
+    z-index: 11;
+}
