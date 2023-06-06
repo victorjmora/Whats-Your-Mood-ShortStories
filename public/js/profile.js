@@ -8,7 +8,8 @@ const newFormHandler = async (event) => {
     const text = document.querySelector('#story-text').value.trim();
     
 
-    if (title && text && genreTag1) {
+    if (title && text && genreTag1 ) {//check for title, text and genretag before accepting a new story
+      
       const response = await fetch(`/api/story`, {
         method: 'POST',
         body: JSON.stringify({ title, text, genreTag1 }),
