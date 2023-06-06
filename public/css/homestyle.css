@@ -11,3 +11,7 @@ body {
 .topZ {
     z-index: 11;
 }
+.verticalButton {
+    vertical-align: middle;
+    margin: auto;
+}
