@@ -88,8 +88,7 @@
     opacity: 0;
   }
   /* END DEFAULT BOOK ATTRIBUTES */
-  
-  /* GRAPHIC DESIGN */
+  /* fantasy */
   .graphic .book {
     align-items: center;
     background: radial-gradient(
@@ -98,12 +97,12 @@
         rgba(0, 0, 0, 0.75)
       ),
       radial-gradient(ellipse at bottom, rgba(70, 70, 70, 0.5), transparent);
-    font-family: "Unica One", cursive;
-    color: darkorange;
+      font-family: 'Audiowide', cursive;
+    color: rgb(233, 192, 141);
   }
   /* END GRAPHIC DESIGN */
   
-  /* DATA VISUALIZATION */
+  /* horror */
   .data .book {
     background: radial-gradient(
         ellipse at top,
@@ -111,7 +110,7 @@
         rgba(0, 0, 0, 0.75)
       ),
       radial-gradient(ellipse at bottom, rgba(70, 70, 70, 0.5), transparent);
-    font-family: "Smooch Sans", sans-serif;
+      font-family: 'Creepster', cursive;
     color: rgb(221, 206, 206);
   }
   /* END DATA VISUALIZATION */
@@ -124,7 +123,7 @@
         rgba(0, 0, 0, 0.85)
       ),
       radial-gradient(ellipse at bottom, rgba(185, 154, 154, 0.5), transparent);
-    font-family: "Nothing You Could Do", cursive;
+      font-family: 'Lobster', cursive;
     color: #212121;
   }
   /* END PHOTOGRAPHY */
@@ -137,7 +136,7 @@
         rgba(0, 0, 0, 0.75)
       ),
       radial-gradient(ellipse at bottom, rgba(70, 70, 70, 0.5), transparent);
-    font-family: "Fredericka the Great", cursive;
+      font-family: 'Reenie Beanie', cursive;
     color: rgb(247, 229, 192);
   }
   /* END LANDSCAPE DESIGN */
