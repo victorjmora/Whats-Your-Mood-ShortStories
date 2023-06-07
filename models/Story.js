@@ -39,7 +39,7 @@ Story.init({
     allowNull: false,
     defaultValue: DataTypes.NOW,
   },
-  starRating: {
+  starRating: { //delete
     type: DataTypes.INTEGER,
     allowNull: true,
   },

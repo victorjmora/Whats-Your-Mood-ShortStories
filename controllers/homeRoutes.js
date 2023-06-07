@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const { Story, User } = require('../models');
+const { Sequelize } = require('sequelize');
+const { Story, User, StarRating } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -39,14 +40,37 @@ router.get('/story/:id', async (req, res) => {
           model: User,
           attributes: ['username'],
         },
+        {
+          model: StarRating
+        },
       ],
+      attributes: {
+        include: [
+          [
+            Sequelize.literal(`SELECT COUNT (*) FROM StarRating WHERE story.id = story_id `), "numberOfReviews"
+          ],
+          [
+            Sequelize.literal(`SELECT COUNT (*) FROM StarRating WHERE story.id = story_id AND ${req.session.user_id} = user_id`), "hasReviewed"
+          ],
+          [
+            Sequelize.literal(`SELECT starRating FROM StarRating WHERE story.id = story_id AND ${req.session.user_id} = user_id`), "userRating"
+          ],
+          [
+            Sequelize.literal(`SELECT SUM (starRating) FROM StarRating WHERE story.id = story_id `), "totalStars"
+          ],
+        ]
+      }
+
     });
 
+    const averageRating = storyData.totalStars/storyData.numberOfReviews;
+    
     const story = storyData.get({ plain: true });
 
     res.render('read', {  //render the read.handlebars view
       ...story,
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in,
+      averageRating: averageRating
     });
   } catch (err) {
     res.status(500).json(err);
